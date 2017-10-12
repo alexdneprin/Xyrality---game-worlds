@@ -7,21 +7,37 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		115E7FAC1F8F92CF005DE328 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115E7FAB1F8F92CF005DE328 /* Constants.swift */; };
+		115E7FAF1F8F9B3B005DE328 /* GameWorld.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115E7FAE1F8F9B3B005DE328 /* GameWorld.swift */; };
+		115E7FB21F8FFD6A005DE328 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115E7FB11F8FFD6A005DE328 /* UIViewControllerExtension.swift */; };
+		115E7FB41F900192005DE328 /* GameWorldsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115E7FB31F900192005DE328 /* GameWorldsViewController.swift */; };
+		115E7FBA1F900FFC005DE328 /* JSONKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115E7FB91F900FFC005DE328 /* JSONKeys.swift */; };
 		11E3C2201F8F6C1000B0BDAA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E3C21F1F8F6C1000B0BDAA /* AppDelegate.swift */; };
-		11E3C2221F8F6C1000B0BDAA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E3C2211F8F6C1000B0BDAA /* ViewController.swift */; };
+		11E3C2221F8F6C1000B0BDAA /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E3C2211F8F6C1000B0BDAA /* LoginViewController.swift */; };
 		11E3C2251F8F6C1000B0BDAA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11E3C2231F8F6C1000B0BDAA /* Main.storyboard */; };
 		11E3C2271F8F6C1000B0BDAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11E3C2261F8F6C1000B0BDAA /* Assets.xcassets */; };
-		11E3C22A1F8F6C1000B0BDAA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11E3C2281F8F6C1000B0BDAA /* LaunchScreen.storyboard */; };
+		11E3C2331F8F828100B0BDAA /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 11E3C2321F8F828100B0BDAA /* Podfile */; };
+		11E3C2371F8F8FD300B0BDAA /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E3C2361F8F8FD300B0BDAA /* NetworkManager.swift */; };
+		F6D875187D4EF5F98DD0973F /* Pods_Xyrality_game_worlds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9D600633A8252B273919B30 /* Pods_Xyrality_game_worlds.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		115E7FAB1F8F92CF005DE328 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		115E7FAE1F8F9B3B005DE328 /* GameWorld.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameWorld.swift; sourceTree = "<group>"; };
+		115E7FB11F8FFD6A005DE328 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		115E7FB31F900192005DE328 /* GameWorldsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameWorldsViewController.swift; sourceTree = "<group>"; };
+		115E7FB91F900FFC005DE328 /* JSONKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONKeys.swift; sourceTree = "<group>"; };
 		11E3C21C1F8F6C1000B0BDAA /* Xyrality game worlds.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Xyrality game worlds.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		11E3C21F1F8F6C1000B0BDAA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		11E3C2211F8F6C1000B0BDAA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		11E3C2211F8F6C1000B0BDAA /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		11E3C2241F8F6C1000B0BDAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		11E3C2261F8F6C1000B0BDAA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		11E3C2291F8F6C1000B0BDAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		11E3C22B1F8F6C1000B0BDAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		11E3C2321F8F828100B0BDAA /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		11E3C2361F8F8FD300B0BDAA /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		E708015760D51946ECFBF3A8 /* Pods-Xyrality game worlds.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Xyrality game worlds.release.xcconfig"; path = "Pods/Target Support Files/Pods-Xyrality game worlds/Pods-Xyrality game worlds.release.xcconfig"; sourceTree = "<group>"; };
+		F1BD8199493233A1CA3C20A5 /* Pods-Xyrality game worlds.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Xyrality game worlds.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Xyrality game worlds/Pods-Xyrality game worlds.debug.xcconfig"; sourceTree = "<group>"; };
+		F9D600633A8252B273919B30 /* Pods_Xyrality_game_worlds.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Xyrality_game_worlds.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +45,54 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6D875187D4EF5F98DD0973F /* Pods_Xyrality_game_worlds.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		115E7FAA1F8F92B9005DE328 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				115E7FAB1F8F92CF005DE328 /* Constants.swift */,
+				115E7FB91F900FFC005DE328 /* JSONKeys.swift */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		115E7FAD1F8F9B0C005DE328 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				115E7FAE1F8F9B3B005DE328 /* GameWorld.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		115E7FB01F8FFBEA005DE328 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				115E7FB11F8FFD6A005DE328 /* UIViewControllerExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		115E7FB51F900625005DE328 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				11E3C2211F8F6C1000B0BDAA /* LoginViewController.swift */,
+				115E7FB31F900192005DE328 /* GameWorldsViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
 		11E3C2131F8F6C1000B0BDAA = {
 			isa = PBXGroup;
 			children = (
 				11E3C21E1F8F6C1000B0BDAA /* Xyrality game worlds */,
 				11E3C21D1F8F6C1000B0BDAA /* Products */,
+				8BC7ED2FC6631E871D86416F /* Pods */,
+				A8627A4CB092D67ADCA9B833 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +107,59 @@
 		11E3C21E1F8F6C1000B0BDAA /* Xyrality game worlds */ = {
 			isa = PBXGroup;
 			children = (
+				115E7FAA1F8F92B9005DE328 /* Supporting Files */,
+				11E3C2351F8F8E2F00B0BDAA /* Network Layer */,
+				11E3C2341F8F87FA00B0BDAA /* Interface Layer */,
+				11E3C2311F8F81B800B0BDAA /* Resources */,
 				11E3C21F1F8F6C1000B0BDAA /* AppDelegate.swift */,
-				11E3C2211F8F6C1000B0BDAA /* ViewController.swift */,
 				11E3C2231F8F6C1000B0BDAA /* Main.storyboard */,
-				11E3C2261F8F6C1000B0BDAA /* Assets.xcassets */,
-				11E3C2281F8F6C1000B0BDAA /* LaunchScreen.storyboard */,
 				11E3C22B1F8F6C1000B0BDAA /* Info.plist */,
+				11E3C2321F8F828100B0BDAA /* Podfile */,
 			);
 			path = "Xyrality game worlds";
+			sourceTree = "<group>";
+		};
+		11E3C2311F8F81B800B0BDAA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				11E3C2261F8F6C1000B0BDAA /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		11E3C2341F8F87FA00B0BDAA /* Interface Layer */ = {
+			isa = PBXGroup;
+			children = (
+				115E7FB51F900625005DE328 /* View Controllers */,
+				115E7FB01F8FFBEA005DE328 /* Extensions */,
+			);
+			path = "Interface Layer";
+			sourceTree = "<group>";
+		};
+		11E3C2351F8F8E2F00B0BDAA /* Network Layer */ = {
+			isa = PBXGroup;
+			children = (
+				115E7FAD1F8F9B0C005DE328 /* Models */,
+				11E3C2361F8F8FD300B0BDAA /* NetworkManager.swift */,
+			);
+			path = "Network Layer";
+			sourceTree = "<group>";
+		};
+		8BC7ED2FC6631E871D86416F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F1BD8199493233A1CA3C20A5 /* Pods-Xyrality game worlds.debug.xcconfig */,
+				E708015760D51946ECFBF3A8 /* Pods-Xyrality game worlds.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A8627A4CB092D67ADCA9B833 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F9D600633A8252B273919B30 /* Pods_Xyrality_game_worlds.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +169,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 11E3C22E1F8F6C1000B0BDAA /* Build configuration list for PBXNativeTarget "Xyrality game worlds" */;
 			buildPhases = (
+				0888DDCF28E43F21C83C7842 /* [CP] Check Pods Manifest.lock */,
 				11E3C2181F8F6C1000B0BDAA /* Sources */,
 				11E3C2191F8F6C1000B0BDAA /* Frameworks */,
 				11E3C21A1F8F6C1000B0BDAA /* Resources */,
+				FB85DCFD73A379AF5BB9B5E7 /* [CP] Embed Pods Frameworks */,
+				E8D1427EAB61333961D1EBCB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -123,21 +224,85 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				11E3C22A1F8F6C1000B0BDAA /* LaunchScreen.storyboard in Resources */,
 				11E3C2271F8F6C1000B0BDAA /* Assets.xcassets in Resources */,
+				11E3C2331F8F828100B0BDAA /* Podfile in Resources */,
 				11E3C2251F8F6C1000B0BDAA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0888DDCF28E43F21C83C7842 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Xyrality game worlds-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E8D1427EAB61333961D1EBCB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Xyrality game worlds/Pods-Xyrality game worlds-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FB85DCFD73A379AF5BB9B5E7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Xyrality game worlds/Pods-Xyrality game worlds-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+				"${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVActivityIndicatorView.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Xyrality game worlds/Pods-Xyrality game worlds-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		11E3C2181F8F6C1000B0BDAA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				11E3C2221F8F6C1000B0BDAA /* ViewController.swift in Sources */,
+				11E3C2371F8F8FD300B0BDAA /* NetworkManager.swift in Sources */,
+				11E3C2221F8F6C1000B0BDAA /* LoginViewController.swift in Sources */,
+				115E7FB21F8FFD6A005DE328 /* UIViewControllerExtension.swift in Sources */,
 				11E3C2201F8F6C1000B0BDAA /* AppDelegate.swift in Sources */,
+				115E7FAC1F8F92CF005DE328 /* Constants.swift in Sources */,
+				115E7FB41F900192005DE328 /* GameWorldsViewController.swift in Sources */,
+				115E7FAF1F8F9B3B005DE328 /* GameWorld.swift in Sources */,
+				115E7FBA1F900FFC005DE328 /* JSONKeys.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,14 +315,6 @@
 				11E3C2241F8F6C1000B0BDAA /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		11E3C2281F8F6C1000B0BDAA /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				11E3C2291F8F6C1000B0BDAA /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -272,6 +429,7 @@
 		};
 		11E3C22F1F8F6C1000B0BDAA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F1BD8199493233A1CA3C20A5 /* Pods-Xyrality game worlds.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -287,6 +445,7 @@
 		};
 		11E3C2301F8F6C1000B0BDAA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E708015760D51946ECFBF3A8 /* Pods-Xyrality game worlds.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

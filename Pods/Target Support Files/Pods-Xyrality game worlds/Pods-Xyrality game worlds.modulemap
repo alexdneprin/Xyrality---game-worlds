@@ -1,0 +1,6 @@
+framework module Pods_Xyrality_game_worlds {
+  umbrella header "Pods-Xyrality game worlds-umbrella.h"
+
+  export *
+  module * { export * }
+}
