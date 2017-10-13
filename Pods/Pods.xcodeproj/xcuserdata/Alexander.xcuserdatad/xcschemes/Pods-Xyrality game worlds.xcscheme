@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "3B7D4CD5BE213AA0F7264AB135C7CA34"
+               BlueprintIdentifier = "A075DF11E4B647E82716B37C7C399517"
                BuildableName = "Pods_Xyrality_game_worlds.framework"
                BlueprintName = "Pods-Xyrality game worlds"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -47,7 +47,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "3B7D4CD5BE213AA0F7264AB135C7CA34"
+            BlueprintIdentifier = "A075DF11E4B647E82716B37C7C399517"
             BuildableName = "Pods_Xyrality_game_worlds.framework"
             BlueprintName = "Pods-Xyrality game worlds"
             ReferencedContainer = "container:Pods.xcodeproj">

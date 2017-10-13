@@ -15,7 +15,7 @@ class GameWorldsViewController: UIViewController {
     //MARK: - Outlets -
 
     @IBOutlet weak var tableView: UITableView!
-    
+
     
     //MARK: - UIViewController Methods -
     //***************************************************
@@ -31,11 +31,7 @@ class GameWorldsViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    public func initWithWorldsList(worldsList: [GameWorld]){
-        self.gameWorldsList = worldsList
-    }
-    
+
     
     //MARK: - Actions -
     //***************************************************
@@ -43,22 +39,18 @@ class GameWorldsViewController: UIViewController {
     
     @IBAction func showAvailableWorldsButtonPressed(_ sender: Any) {
         
-        var availableWorlds = [GameWorld]()
-        
-        for world in self.gameWorldsList{
-            if world.online == true{
-                availableWorlds.append(world)
+        let availableWorlds = self.gameWorldsList.filter { (gameWorld) -> Bool in
+            if gameWorld.online == true {
+                return true
+            } else {
+                return false
             }
         }
-        
+
         self.gameWorldsList = availableWorlds
         self.tableView.reloadData()
         
         showMessage(message: Constants.completeMessage, responce: Constants.okMessage)
-    }
-    
-    deinit {
-        print("deinit called")
     }
 }
 

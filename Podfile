@@ -3,7 +3,6 @@ target 'Xyrality game worlds' do
 use_frameworks!
 
 pod 'Alamofire'
-pod 'AlamofireImage'
 pod 'NVActivityIndicatorView'
 
 end

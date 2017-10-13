@@ -9,9 +9,9 @@
 import UIKit
 
 class LoginViewController: UIViewController {
-
+    
     //MARK: - Outlets -
-
+    
     @IBOutlet weak var loginTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     
@@ -21,23 +21,27 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         self.configureViewController()
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
     
     // MARK: - Private -
     //***************************************************
     
     func configureViewController() {
         
+        self.loginTextField.delegate = self
+        self.passwordTextField.delegate = self
+        
         self.loginTextField.text = Constants.userLogin
         self.passwordTextField.text = Constants.userPassword
+
     }
     
     
@@ -46,21 +50,23 @@ class LoginViewController: UIViewController {
     
     
     @IBAction func loginButtonPressed(_ sender: Any) {
-        if (loginTextField.text != "" && passwordTextField.text != ""){
-
-            self.startAnimating()
-
-            weak var weakSelf = self
-            
-            OperationQueue.main.addOperation({ () -> Void in
-                NetworkManager.shared.getAllAvailableWorlds(login: (weakSelf?.loginTextField.text)!, password: (weakSelf?.passwordTextField.text)!, completionBlock: { (gameWorlds) in
-                    weakSelf?.stopAnimating()
-                    weakSelf?.showListOfGameWorlds(worldsList: gameWorlds)
-                })
-            })
-        } else {
+        self.loadListOfGameWorlds(loginString: loginTextField.text!, passwordString: passwordTextField.text!)
+    }
+    
+    func loadListOfGameWorlds(loginString: String, passwordString: String){
+        
+        guard (loginString != "" && passwordString != "") else {
             self.showMessage(message: Constants.fieldIsEmptyMessage, responce: Constants.fieldIsEmptyAnswer)
+            return
         }
+        
+        self.startAnimating()
+        
+        NetworkManager.shared.getAllAvailableWorlds(login: loginString, password: passwordString, completionBlock: { [weak self] (gameWorlds) in
+            guard let `self` = self else { return }
+            self.stopAnimating()
+            self.showListOfGameWorlds(worldsList: gameWorlds)
+        })
     }
     
     func showListOfGameWorlds(worldsList: [GameWorld]){
@@ -74,4 +80,28 @@ class LoginViewController: UIViewController {
 }
 
 
+// MARK: - UITextFieldDelegate -
+//***************************************************
 
+
+extension LoginViewController: UITextFieldDelegate {
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        
+        switch textField {
+            
+        case self.loginTextField:
+            self.passwordTextField.becomeFirstResponder()
+            return false
+            
+        case self.passwordTextField:
+            self.loadListOfGameWorlds(loginString: loginTextField.text!, passwordString: passwordTextField.text!)
+            textField.endEditing(true)
+            return true
+            
+        default:
+            return true
+        }
+    }
+    
+}

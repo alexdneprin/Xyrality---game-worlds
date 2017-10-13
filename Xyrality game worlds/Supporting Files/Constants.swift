@@ -28,7 +28,6 @@ struct Constants {
     static let contentTypeHeader = "Content-Type"
     static let applicationJSONDataType = "application/json"
 
-    
     static let results = "results"
 
 

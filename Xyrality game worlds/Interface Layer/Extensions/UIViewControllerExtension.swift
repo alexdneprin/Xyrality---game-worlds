@@ -23,14 +23,4 @@ extension UIViewController: NVActivityIndicatorViewable{
         
         startAnimating(size, message: "", type: .lineScale)
     }
-    
-    var nullInt: Int {
-        set {
-            self.nullInt = 0
-        }
-        
-        get {
-            return 0
-        }
-    }
 }

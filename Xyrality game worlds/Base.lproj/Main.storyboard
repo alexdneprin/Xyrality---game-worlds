@@ -29,7 +29,7 @@
                                         </constraints>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="done"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E0Y-bw-2XQ">
                                         <rect key="frame" x="8" y="110" width="324" height="40"/>
@@ -51,7 +51,7 @@
                                         </constraints>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="next"/>
                                     </textField>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -87,10 +87,10 @@
             </objects>
             <point key="canvasLocation" x="-258" y="116"/>
         </scene>
-        <!--Game Worlds Navigation Controller-->
+        <!--Navigation Controller-->
         <scene sceneID="2cy-gI-aM3">
             <objects>
-                <navigationController storyboardIdentifier="GameWorldsNavigationController" id="Mmd-4Z-AIh" customClass="GameWorldsNavigationController" customModule="Xyrality_game_worlds" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="GameWorldsNavigationController" id="Mmd-4Z-AIh" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="n2h-WD-9h8">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>

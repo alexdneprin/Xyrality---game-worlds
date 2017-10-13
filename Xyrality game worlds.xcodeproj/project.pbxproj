@@ -16,8 +16,8 @@
 		11E3C2221F8F6C1000B0BDAA /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E3C2211F8F6C1000B0BDAA /* LoginViewController.swift */; };
 		11E3C2251F8F6C1000B0BDAA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11E3C2231F8F6C1000B0BDAA /* Main.storyboard */; };
 		11E3C2271F8F6C1000B0BDAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11E3C2261F8F6C1000B0BDAA /* Assets.xcassets */; };
-		11E3C2331F8F828100B0BDAA /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 11E3C2321F8F828100B0BDAA /* Podfile */; };
 		11E3C2371F8F8FD300B0BDAA /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E3C2361F8F8FD300B0BDAA /* NetworkManager.swift */; };
+		11F80CD31F910E7A002D460F /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 11F80CD21F910E7A002D460F /* Podfile */; };
 		F6D875187D4EF5F98DD0973F /* Pods_Xyrality_game_worlds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9D600633A8252B273919B30 /* Pods_Xyrality_game_worlds.framework */; };
 /* End PBXBuildFile section */
 
@@ -33,8 +33,8 @@
 		11E3C2241F8F6C1000B0BDAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		11E3C2261F8F6C1000B0BDAA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		11E3C22B1F8F6C1000B0BDAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		11E3C2321F8F828100B0BDAA /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		11E3C2361F8F8FD300B0BDAA /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		11F80CD21F910E7A002D460F /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; };
 		E708015760D51946ECFBF3A8 /* Pods-Xyrality game worlds.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Xyrality game worlds.release.xcconfig"; path = "Pods/Target Support Files/Pods-Xyrality game worlds/Pods-Xyrality game worlds.release.xcconfig"; sourceTree = "<group>"; };
 		F1BD8199493233A1CA3C20A5 /* Pods-Xyrality game worlds.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Xyrality game worlds.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Xyrality game worlds/Pods-Xyrality game worlds.debug.xcconfig"; sourceTree = "<group>"; };
 		F9D600633A8252B273919B30 /* Pods_Xyrality_game_worlds.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Xyrality_game_worlds.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -114,7 +114,7 @@
 				11E3C21F1F8F6C1000B0BDAA /* AppDelegate.swift */,
 				11E3C2231F8F6C1000B0BDAA /* Main.storyboard */,
 				11E3C22B1F8F6C1000B0BDAA /* Info.plist */,
-				11E3C2321F8F828100B0BDAA /* Podfile */,
+				11F80CD21F910E7A002D460F /* Podfile */,
 			);
 			path = "Xyrality game worlds";
 			sourceTree = "<group>";
@@ -224,8 +224,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11F80CD31F910E7A002D460F /* Podfile in Resources */,
 				11E3C2271F8F6C1000B0BDAA /* Assets.xcassets in Resources */,
-				11E3C2331F8F828100B0BDAA /* Podfile in Resources */,
 				11E3C2251F8F6C1000B0BDAA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -274,13 +274,11 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Xyrality game worlds/Pods-Xyrality game worlds-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
 				"${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVActivityIndicatorView.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
